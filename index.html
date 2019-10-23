@@ -2,74 +2,71 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Intro component with sign up form</title>
+  
+  <style>
+    body{
+  background: url(https://wallpapermemory.com/uploads/850/red-wallpaper-full-hd-1080p-445346.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.input {
+  border-color: black; 
+  max-width: 500px;
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="mobile-styles.css">
+}
+#form {
+  position: relative;
+  background-color: white; 
+  border-radius: 25px; 
+  max-width: 600px;
+
+}
+
+  </style>
 </head>
-
 <body>
-
-  <div class="row main">
-    <div class="col-lg-6 container1">
-      <h1>Learn to code by watching others</h1>
-      <p class="container1-p">See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
-        but understanding how developers think is invaluable.</p>
-    </div>
-    <div class="col-lg-5 container2">
-      <button type="button" class="btn btn-block free-button"  ><strong class="try-line">Try it free 7 days </strong>then $20/mo. thereafter</button>
-      <div class="card">
-        <div class="card-body">
-          <div class="input-group mb-3">
-            <input id="First_name" type="text" class="form-control" placeholder="First Name" aria-label="First Name" aria-describedby="button-addon2">
-
-              </div>
-          <p id="first-name" class="form-fields"><em>first name cannot be empty</em></p>
-          <div class="input-group mb-3">
-            <input id="last_name" type="text" class="form-control" placeholder="Last Name" aria-label="Last Name" aria-describedby="button-addon2">
-          </div>
-          <p id="last-name" class="form-fields"><em>last name cannot be empty</em></p>
-          <div class="input-group mb-3">
-            <input id="_email" type="email" class="form-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="button-addon2">
-          </div>
-          <p id="email" class="form-fields"><em>looks like this is not an email</em></p>
-          <div class="input-group mb-3">
-            <input id="_password" type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="button-addon2">
-          </div>
-          <p id="password" class="form-fields"><em>password cannot be empty</em></p>
-          <button class="btn btn-lg btn-block claim-button" type="button">CLAIM YOUR FREE TRIAL</button>
-          <p class="last-div-p">By clicking the button, you are agreeing to our <a href="#"><strong class="terms">Terms and Services</strong></a> ></p>
+  
+<div class="container-fluid">
+  
+  <div class="row">
+        <div class="col-sm-6">
+          <div id="intro" style="margin-top: 240px; margin-left: 150px; margin-right: 150px; ">
+          <h1 style="color: white; max-width: 350px;"><strong style="font-size: 40px;">Learn To Code By Watching Others</strong></h1>
+                  <p style="color: white; font-size: 15px; max-width: 500px;">See how experianced developers solve problem in real-time.</p><p style="color: white; font-size: 15px; max-width: 450px;">Watching scripted tutorials is great,but understanding how developer think is invaluable.</p>
+           </div>       
         </div>
-      </div>
+    <div class="col-sm-6" style="margin-top: 100px;">
+      <a style="max-width: 600px; border-radius: 15px; text-align: center;" class="btn btn-primary form-control"><strong>Try it free 7 days</strong> then 20$/month thereafter</a>
+              <br><br>
+            
+              <div id="form" >
+                <form style="margin-left: 50px; margin-right: 50px; " class="form">
+                  <br><br>
+                <input   type="text" name="" placeholder="First name" class="form-control" required><br>
+                <input  type="text" name="Last name" placeholder="Last name " class="form-control" required><br>
+                <input  type="email" name="" placeholder="Email id" class="form-control" required><br>
+                <input  type="password" name="" placeholder="Password" class="form-control" required><br>
+                <button style="max-width: 500px;" class="btn btn-success form-control">CLAIM YOUR FREE TRAIL</button><br><br>
+                <p style="font-size: 12px;">By clicking the button you are agreeing to our <a href="#" style="color: red;">terms and conditions</a></p><br><br>
+                </form>
+              </div>
     </div>
+    
   </div>
-
-
-
-
-
-
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://github.com/rehank478">Rehan khan</a>.
-    </p>
-  </footer>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="index.js" charset="utf-8"></script>
+</div>
+  
+ 
 </body>
+
 
 </html>
