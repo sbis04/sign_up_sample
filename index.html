@@ -1,42 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Intro component with sign up form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    body{
+  background: url(https://wallpapermemory.com/uploads/850/red-wallpaper-full-hd-1080p-445346.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.input {
+  border-color: black; 
+  max-width: 500px;
+
+}
+#form {
+  position: relative;
+  background-color: white; 
+  border-radius: 25px; 
+  max-width: 600px;
+
+}
+
   </style>
 </head>
 <body>
-
-  Learn to code by watching others
-
-  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
-  but understanding how developers think is invaluable. 
-
-  Try it free 7 days then $20/mo. thereafter
-
-  First Name 
-  Last Name 
-  Email Address
-  Password
-
-  Claim your free trial 
-
-  By clicking the button, you are agreeing to our Terms and Services
   
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
+<div class="container-fluid">
+  
+  <div class="row">
+    <div class="col-sm-6">
+      <div id="intro" style="margin-top: 240px; margin-left: 150px; margin-right: 150px; ">
+      <h1 style="color: white; max-width: 350px;"><strong style="font-size: 40px;">Learn To Code By Watching Others</strong></h1>
+              <p style="color: white; font-size: 15px; max-width: 500px;">See how experianced developers solve problem in real-time.</p><p style="color: white; font-size: 15px; max-width: 450px;">Watching scripted tutorials is great,but understanding how developer think is invaluable.</p>
+       </div>       
+    </div>
+    <div class="col-sm-6" style="margin-top: 100px;">
+      <a style="max-width: 600px; border-radius: 15px; text-align: center;" class="btn btn-primary form-control"><strong>Try it free 7 days</strong> then 20$/month thereafter</a>
+              <br><br>
+            
+              <div id="form" >
+                <form style="margin-left: 50px; margin-right: 50px; " class="form">
+                  <br><br>
+                <input   type="text" name="" placeholder="First name" class="form-control" required><br>
+                <input  type="text" name="Last name" placeholder="Last name " class="form-control" required><br>
+                <input  type="email" name="" placeholder="Email id" class="form-control" required><br>
+                <input  type="password" name="" placeholder="Password" class="form-control" required><br>
+                <button style="max-width: 500px;" class="btn btn-success form-control">CLAIM YOUR FREE TRAIL</button><br><br>
+                <p style="font-size: 12px;">By clicking the button you are agreeing to our <a href="#" style="color: red;">terms and conditions</a></p><br><br>
+                </form>
+              </div>
+    </div>
+    
+  </div>
+</div>
+   
+  
+
+  
 </body>
 </html>
