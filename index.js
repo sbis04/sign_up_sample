@@ -42,3 +42,5 @@ $('.claim-button').click(function() {
 
 
 });
+
+Fixes:#3<issue no.>
