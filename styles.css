@@ -97,23 +97,4 @@ h1{
 
 
 
-/* Mobile Site */
-
-@media only screen and (max-width: 600px){
-  .main{
-    background-image: url("images/bg-intro-mobile.png");
-    padding: 100px 50px 100px;
-  }
-
-  .container1{
-    text-align: center;
-    margin: 100px 0 50px;
-  }
-.card{
-  padding: 20px;
-}
-
-.free-button{
-  padding: 5px 100px 0;
-}
-}
+Fixes: #<issue no.>
